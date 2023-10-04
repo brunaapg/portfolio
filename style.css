@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+    margin: 10px;
+    padding: 0;
+}
+
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #333638;
+    color: #c0c8bb;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#menu {
+    margin-right: 5%;
+    color:black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+    background-color: #f3efef;
+    padding: 16px;
+    bottom:20px;
+    margin:20px;
+    border-radius: 16px;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+    background-color: #333;
+    color: #fff;
+}
+
+.titulo-destaque {
+    color: #22D4FD;
+}
+
+.apresentacao {
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction:column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    gap: 32px;
+}
+
+.apresentacao__links__link {
+    background-color: #ca22fd;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+img {
+    border-radius: 150px;
+}
+
+.formulario {
+    display:flex;
+    justify-content:center;
+    align-items: left;
+    margin-top: 35px;
+    
+}
+
+form {
+    width: 90%;
+    min-width: 28.125em;
+    max-width: 35em;
+    background-color: black;
+    padding: 1em;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input, textarea {
+    border: 2px solid transparent;
+    padding: .75em;
+    margin: .5em 0 2.5em;
+}
+
+
+.projetos {
+    margin: 10% 25%;
+    text-align: center;
+    align-items: center;
+}
+
+.cv, .cardapio, .ods, .imc {
+    margin: 10% 25%;
+    background-color: #484449;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    align-items:center;
+    gap: 32px;
+    
+}
+
+.apresentacao__links__trabalho {
+    background-color: #ca22fd;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 15px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+@media all and (max-width: 768px) {
+    nav {
+        visibility:visible;
+        display:flex;
+    }
+    
+    .apresentacao__conteudo, .formulario {
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+}
